@@ -1,0 +1,15 @@
+<h1>Welcome to the Friend Gallery!</h1>
+<p>There are {{friendCount}} friends in the gallery.</p>
+<hr>
+<p>Filters:</p>
+<button (click)="setFilter('')">No Filter</button>
+<button (click)="setFilter(tag)" *ngFor="let tag of tags">{{tag}}</button>
+<p *ngIf="filterTag !== ''">Filtering by tag: {{filterTag}}</p>
+<hr>
+<ng-container *ngFor="let friendImage of friendsToDisplay; let i = index">
+  <app-gallery-detailed-image
+  [detailedImage]="friendImage"
+  [index]="i"
+  [imageLibrary]="'friends'">
+  </app-gallery-detailed-image>
+</ng-container>

@@ -1,1 +1,270 @@
-/* You can add global styles to this file, and also import other style files */
+div {
+  width: 100px;
+  height: 50px;
+  position: relative;
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#songName {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  text-align: right;
+  background: white;
+}
+
+.debug-message {
+  color: black;
+}
+
+.debug-friend {
+  background-color: rgb(131, 218, 218);
+}
+
+/* speeds */
+.speed-1 {
+  animation: speed1animation 20s infinite;
+}
+@keyframes speed1animation {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-2 {
+  animation: speed2animation 8s infinite;
+}
+@keyframes speed2animation {
+  from {
+    left: -450px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-3 {
+  animation: speed3animation 10s infinite;
+}
+@keyframes speed3animation {
+  from {
+    left: -530px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-4 {
+  animation: speed4animation 10s infinite;
+}
+@keyframes speed4animation {
+  from {
+    left: -7000px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-5 {
+  animation: speed5animation 11s infinite;
+}
+@keyframes speed5animation {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-6 {
+  animation: speed6animation 20s infinite;
+}
+@keyframes speed6animation {
+  from {
+    left: -700px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+.speed-7 {
+  animation: speed7animation 18s infinite;
+}
+@keyframes speed7animation {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+
+.speed-8 {
+  animation: speed8animation 7s infinite;
+}
+@keyframes speed8animation {
+  from {
+    left: -700px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-9 {
+  animation: speed9animation 10s infinite;
+}
+@keyframes speed9animation {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+
+.speed-10 {
+  animation: speed10animation 15s infinite;
+}
+@keyframes speed10animation {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+
+.speed-11 {
+  animation: speed11animation 9s infinite;
+}
+@keyframes speed11animation {
+  from {
+    left: -550px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-12 {
+  animation: speed12animation 16s infinite;
+}
+@keyframes speed12animation {
+  from {
+    left: -650px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+
+.speed-13 {
+  animation: speed13animation 25s infinite;
+}
+@keyframes speed13animation {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-14 {
+  animation: speed14animation 10s infinite;
+}
+@keyframes speed14animation {
+  from {
+    left: -1000px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+
+.speed-15 {
+  animation: speed15animation 4s infinite;
+}
+@keyframes speed15animation {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 1700px;
+  }
+}
+
+.speed-16 {
+  animation: speed16animation 30s infinite;
+}
+@keyframes speed16animation {
+  from {
+    left: -350px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+
+/* animations */
+.animation-1 {
+  animation-timing-function: linear;
+}
+.animation-2 {
+  animation-timing-function: ease;
+}
+.animation-3 {
+  animation-timing-function: ease-in;
+}
+.animation-4 {
+  animation-timing-function: ease-out;
+}
+.animation-5 {
+  animation-timing-function: ease-in-out;
+}
+.animation-6 {
+  animation-timing-function: ease-in-out;
+}
+.animation-7 {
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+.animation-8 {
+  animation-timing-function: ease;
+  animation-direction: reverse;
+}
+.animation-9 {
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+}
+.animation-10 {
+  animation-timing-function: ease-out;
+  animation-direction: reverse;
+}
+.animation-11 {
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+.animation-12 {
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+

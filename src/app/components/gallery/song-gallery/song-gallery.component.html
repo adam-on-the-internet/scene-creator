@@ -1,0 +1,41 @@
+<h1>Welcome to the Song Gallery!</h1>
+<p>There are {{songCount}} songs in the gallery.</p>
+<hr>
+<p>
+  Songs:
+</p>
+<ol>
+    <li *ngFor="let song of songsToDisplay">
+
+        <button (click)="setSong(song)" >{{song.name}}</button>
+    </li>
+</ol>
+<p *ngIf="songView">Viewing song: {{songView.name}}</p>
+<hr>
+<ng-container *ngIf="songView">
+  <h3>Song Tags:</h3>
+  <p *ngIf="songView.tags.length === 0">
+    No tags for this song.
+  </p>
+  <ul>
+    <li *ngFor="let tag of songView.tags">{{tag}}</li>
+  </ul>
+  <hr>
+  <h3>Song Locations:</h3>
+  <ng-container *ngFor="let location of songLocations; let i = index">
+      <app-gallery-detailed-image
+      [detailedImage]="location"
+      [index]="i"
+      [imageLibrary]="'locations'">
+      </app-gallery-detailed-image>
+    </ng-container>
+  <hr>
+  <h3>Song Friends:</h3>
+      <ng-container *ngFor="let friend of songFriends; let i = index">
+        <app-gallery-detailed-image
+        [detailedImage]="friend"
+        [index]="i"
+        [imageLibrary]="'friends'">
+        </app-gallery-detailed-image>
+      </ng-container>
+</ng-container>

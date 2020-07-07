@@ -1,0 +1,6 @@
+<ng-container *ngIf="worldReady">
+  <h1 id="world-name" *ngIf="worldService.songMode" (click)="nextSong()">
+    {{worldName}}
+  </h1>
+  <app-scene></app-scene>
+</ng-container>

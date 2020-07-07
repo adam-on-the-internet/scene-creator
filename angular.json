@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "scene-creator"
+    }
+  },
+  "defaultProject": "scene-creator",
+  "cli": {
+    "analytics": false
+  }
 }
