@@ -79,3 +79,19 @@ export const BERNIE: Song = {
     name: "thanks for coming, vote Bernie",
     tags: [],
 };
+
+export const MEDIOCRE: Song = {
+  name: "mediocre sex",
+  tags: [],
+};
+
+export const HATE: Song = {
+  name: "i hate your husband",
+  tags: [],
+};
+
+export const EVERYWHERE: Song = {
+  name: "everywhere you are (theme song reprise)",
+  tags: [],
+};
+
